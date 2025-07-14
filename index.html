@@ -2,18 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cheng Xin Yuan - Terminal Portfolio</title>
+  <title>Cheng Xin Yuan - Portfolio</title>
 
-  <!-- Import Ubuntu Mono font from Google Fonts -->
+  <!-- Ubuntu Mono font -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
   <style>
     body {
-      background-color: #000;
-      color: #33ff33;
+      background-color: #100f1b;
+      color: #c1c4c1;
       font-family: 'Ubuntu Mono', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 700px;
       padding: 2rem;
-      line-height: 1.6;
+      box-sizing: border-box;
+    }
+
+    .section {
+      border: 1px solid #33ff33;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #33ff33;
     }
 
     a {
@@ -25,44 +47,38 @@
       text-decoration: underline;
     }
 
-    .prompt::before {
-      content: "$ ";
-      color: #33ff33;
+    .section p,
+    .section li {
+      margin: 0.5rem 0;
     }
 
-    h1, h2 {
-      color: #33ff33;
-    }
-
-    .section {
-      margin-top: 2rem;
+    ul {
+      padding-left: 1rem;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    
+    <div class="section">
+      <h2>~/portfolio</h2>
+      <p>Hello, I'm Cheng Xin Yuan.</p>
+      <p>I'm an AI researcher passionate about LLMs, RL, and building useful tools.</p>
+    </div>
 
-  <h1>~/portfolio</h1>
-  <p class="prompt">Hello, I'm Cheng Xin Yuan.</p>
-  <p class="prompt">I'm an AI researcher passionate about LLMs, RL, and building useful tools.</p>
+    <div class="section">
+      <h2>~/projects</h2>
+      <ul>
+        <li><a href="https://textarena.ai" target="_blank">TextArena: Benchmarking LLMs with Games</a></li>
+        <li><a href="https://arxiv.org/pdf/2405.14159" target="_blank">SuperTinyLanguageModels: LLMs under 100M</a></li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>~/projects</h2>
-    <p class="prompt">
-      <a href="https://github.com/bobbycxy/TextArena" target="_blank">
-        TextArena: Benchmarking LLMs with Games
-      </a>
-    </p>
-    <p class="prompt">
-      <a href="https://github.com/bobbycxy/SuperTinyLanguageModels" target="_blank">
-        SuperTinyLanguageModels: LLMs under 100M
-      </a>
-    </p>
+    <div class="section">
+      <h2>~/contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </div>
+
   </div>
-
-  <div class="section">
-    <h2>~/contact</h2>
-    <p class="prompt">Email: <a href="mailto:you@example.com">you@example.com</a></p>
-  </div>
-
 </body>
 </html>
