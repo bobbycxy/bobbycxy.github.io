@@ -43,15 +43,15 @@
     }
 
     .section {
-      border: 1px solid rgba(255, 255, 255, 0.05); /* very subtle */
+      border: 1px solid rgba(255, 255, 255, 0.05); /* subtle */
       border-radius: 8px;
       padding: 1.5rem;
-      background-color: rgba(255, 255, 255, 0.015); /* gentle background tint */
+      background-color: rgba(255, 255, 255, 0.015); /* gentle tint */
       transition: box-shadow 0.3s ease;
     }
 
     .section:hover {
-      box-shadow: 0 0 0 1px var(--accent); /* soft glow on hover */
+      box-shadow: 0 0 0 1px var(--accent); /* soft glow */
     }
 
     h1 {
@@ -69,10 +69,6 @@
     p {
       margin-bottom: 0.5rem;
       line-height: 1.6;
-    }
-
-    .section p + p {
-      margin-top: 0.4rem;
     }
 
     ul {
@@ -109,14 +105,13 @@
     <section class="section">
       <h1>~/about</h1>
       <p>Hey, I’m <strong>Bobby Cheng</strong>.</p>
-      <p>I care about building small, efficient LLMs and using AI in ways that are actually useful. That’s why I’ve spent time on projects like TextArena, UnstableBaselines and SuperTinyLanguageModels that are tools for evaluating models through interaction, training them to reason through self-play and reinforcement learning, and building small language models with interpretable architectures, fast training, and modular design.</p>
+      <p>I build small, efficient LLMs and focus on making AI actually useful. My projects include TextArena, UnstableBaselines, and SuperTinyLanguageModels which are tools for evaluating models through interaction, training them via self-play and reinforcement learning, and designing interpretable architectures with fast, modular training.</p>
       <br>
       <p>
         [<a href="mailto:bobbycxy1994@gmail.com">Email</a>]
         [<a href="https://x.com/bobbycxy" target="_blank">X</a>]
         [<a href="https://github.com/bobbycxy" target="_blank">GitHub</a>]
         [<a href="https://scholar.google.com/citations?user=pjzy2MkAAAAJ" target="_blank">Google Scholar</a>]
-        <!-- [<a href="https://linkedin.com/in/bobbycxy" target="_blank">LinkedIn</a>] -->
       </p>
     </section>
 
@@ -124,29 +119,28 @@
       <h2>~/work</h2>
       <ul>
         <li>
-          UnstableBaselines [<a href="https://github.com/LeonGuertler/UnstableBaselines" target="_blank">GitHub</a>]<br>
-          <!-- → Exploring how a structured learning curriculum can improve sample efficiency and generalization in multi-turn self-play environments.  -->
+          Co-Author, TextArena [<a href="https://textarena.ai" target="_blank">site</a>] [<a href="https://github.com/LeonGuertler/TextArena" target="_blank">GitHub</a>] [<a href="https://arxiv.org/pdf/2504.11442" target="_blank">arXiv</a>] [<a href="https://github.com/TextArena/TextArenaBlog" target="_blank">blog</a>] [<a href="https://research.ibm.com/blog/LLM-social-intelligence-framework" target="_blank">IBM</a>]
+          <!-- → Evaluation framework using single- and multiplayer games for LLMs -->
         </li>
         <li>
-          How We Built TextArena [<a href="https://github.com/TextArena/TextArenaBlog" target="_blank">blog</a>]<br>
-          <!-- → Lessons in designing clean APIs and serverless game matchmaking. -->
+          Builder, UnstableBaselines [<a href="https://github.com/LeonGuertler/UnstableBaselines" target="_blank">GitHub</a>]
+          <!-- → Curriculum-driven RL training for multi-turn environments -->
         </li>
         <li>
-          MindGamesChallenge @ NeurIPS 2025 [<a href="https://www.mindgamesarena.com/" target="_blank">site</a>] [<a href="https://leonguertler.github.io/2025/07/19/neurips-competition" target="_blank">blog</a>]<br>
-          <!-- → Partnering MindGames to host their online competition on the TextArena platform. -->
+          Builder, SuperTinyLanguageModels [<a href="https://github.com/LeonGuertler/SuperTinyLanguageModels" target="_blank">GitHub</a>] [<a href="https://arxiv.org/pdf/2405.14159" target="_blank">arXiv</a>]
+          <!-- → Exploring efficient and interpretable LLMs (10M–100M params) -->
         </li>
         <li>
-          TextArena [<a href="https://textarena.ai" target="_blank">site</a>] [<a href="https://github.com/LeonGuertler/TextArena" target="_blank">GitHub</a>] [<a href="https://arxiv.org/pdf/2504.11442" target="_blank">arXiv</a>]<br>
-          <!-- → An evaluation framework using single- and multiplayer games for LLMs. -->
+          Co-Organiser, MindGamesChallenge @ NeurIPS 2025 [<a href="https://www.mindgamesarena.com/" target="_blank">site</a>] [<a href="https://leonguertler.github.io/2025/07/19/neurips-competition" target="_blank">blog</a>]
+          <!-- → Official NeurIPS 2025 competition on multi-agent reasoning -->
         </li>
         <li>
-          SuperTinyLanguageModels [<a href="https://github.com/LeonGuertler/SuperTinyLanguageModels" target="_blank">GitHub</a>] [<a href="https://arxiv.org/pdf/2405.14159" target="_blank">arXiv</a>]<br>
-          <!-- → Exploring how small models can match larger ones. -->
+          Reviewer, NeurIPS 2025 Workshop on Multi-Turn Interactions in LLMs
+          <!-- → Reviewing submissions on dialogue and interactive reasoning -->
         </li>
       </ul>
     </section>
 
   </main>
 </body>
-
 </html>
